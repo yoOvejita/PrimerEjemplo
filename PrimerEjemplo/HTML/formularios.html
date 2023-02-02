@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Formularios</title>
+	</head>
+	<body>
+		<h1>Formulario 1</h1>
+		<form action="">
+			Usuario: <input type="text"><br/>
+			Password: <input type="text"><br/>
+			<input type="submit">
+		</form>
+		<br/>
+		<h1>Formulario 2</h1>
+		<form action="">
+			<fieldset>
+				<legend>Entrada de texto</legend>
+				<p>
+					<label>Text box</label>
+					<input type="text" id="miText" value="Mi texto">
+				</p>
+				<p>
+					<label>Password</label>
+					<input type="password" id="miPwd" value="secreto">
+				</p>
+				<p>
+					<label>Text Area</label>
+					<textarea id="miTextArea" rows="5" cols="40">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Ante metus dictum at tempor. Aliquam faucibus purus in massa. 
+					</textarea>
+				</p>
+				
+			</fieldset>
+			<fieldset>
+				<legend>Elementos de selección</legend>
+				<p>
+					<label>Select List</label>
+					<select id="miList">
+						<option value="FIS102">Física II</option>
+						<option value="INF101">Introducción a la informática</option>
+						<option value="MAT100">Älgebra</option>
+						<option value="TEC100">Tecnicas de estudio</option>
+					</select>
+				</p>
+				<p>
+					<label>Check boxes</label>
+					<input type="checkbox" id="chkHuevos" value="hvsCriollos">
+					<label for="chkHuevos">Huevos criollos</label>
+					<input type="checkbox" id="chkJam" value="jam">
+					<label for="chkJam">Jamóm</label>
+				</p>
+				<p>
+					<label>Radio buttons</label>
+					<input type="radio" id="tempFrio" value="frio" name="radTemperatura">
+					<label for="tempFrio">Frío</label>
+					<input type="radio" id="tempTibio" value="tibi" name="radTemperatura" checked="checked">
+					<label for="tempFrio">Tibio</label>
+					<input type="radio" id="tempCaliente" value="cali" name="radTemperatura">
+					<label for="tempFrio">Caliente</label>
+				</p>
+			</fieldset>
+		</form>
+	</body>
+</html>
