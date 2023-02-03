@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="es">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Formularios</title>
@@ -7,8 +7,8 @@
 	<body>
 		<h1>Formulario 1</h1>
 		<form action="">
-			Usuario: <input type="text"><br/>
-			Password: <input type="text"><br/>
+			Usuario: <input type="text" placeholder="Rellene este campo" required><br/>
+			Password: <input type="text" placeholder="Introduzca su contraseña"><br/>
 			<input type="submit">
 		</form>
 		<br/>
@@ -18,7 +18,7 @@
 				<legend>Entrada de texto</legend>
 				<p>
 					<label>Text box</label>
-					<input type="text" id="miText" value="Mi texto">
+					<input type="text" id="miText" value="Mi texto" autofocus>
 				</p>
 				<p>
 					<label>Password</label>
@@ -60,6 +60,48 @@
 					<label for="tempFrio">Caliente</label>
 				</p>
 			</fieldset>
+			<fieldset>
+				<legend>Buttons</legend>
+				<p>
+					<button type="button">
+						Botón estándar
+					</button>
+					<input type="button" value="Botón input">
+					<input type="reset">
+					<input type="submit">
+				</p>
+			</fieldset>
 		</form>
+		
+		<h1>Elemento scuriosos</h1>
+		<form>
+			Elija color de tela: <input type="color" id="colorex">
+			<br>
+			Elija fecha de envío: <input type="date" id="fecha_env">
+			<br>
+			Elija tiempo: <input type="datetime" id="tiempo">
+			<br>
+			Ingrese la cantidad: <input type="number" id="cant_pedido" min="1" max="200">
+			<br>
+			<input type="submit">
+		</form>
+		
+		<h1>Elementos con carga semántica</h1>
+		<!-- Acá también iría el tag <label> ya visto -->
+		<h3>Address</h3>
+		<address>
+			Z. Central, No. 123 <br>
+			Cod. postal: 4321
+		</address>
+		
+		<br>
+		<h3>Article</h3>
+		<article>
+			<header>
+				<h1>Desde <em><a href="https://www.twitter.com">Twitter</a></em></h1>
+				<p>bla bla bla</p>
+			</header>
+		</article>
+		
 	</body>
 </html>
