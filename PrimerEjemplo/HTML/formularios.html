@@ -102,6 +102,108 @@
 				<p>bla bla bla</p>
 			</header>
 		</article>
+		<br>
 		
+		<h3>Aside</h3>
+		<aside>
+			Contenido secundario.
+		</aside>
+		
+		<header>
+			<h1>Este es el encabezado de la página</h1>
+		</header>
+		<footer>
+			<h2>Pie de página</h2>
+			<address>
+				Z. Central, No. 123 <br>
+				Cod. postal: 4321
+			</address>
+		</footer>
+		
+		<nav>
+			<h2>Mi lista</h2>
+			<ul>
+				<li><a href="#">Enlace 1</a></li>
+				<li><a href="#">Enlace 2</a></li>
+				<li><a href="#">Enlace 3</a></li>
+				<li><a href="#">Enlace 4</a></li>
+				<li><a href="#">Enlace 5</a></li>
+			</ul>
+		</nav>
+		
+		<br>
+		<p><dfn>HTML</dfn>
+		Lenguaje para el diseño de páginas web.<br>
+		- Wikipedia, enero 2023
+		</p>
+		
+		<br>
+		<h2>Figure</h2>
+		<figure>
+			<img alt="Un mapache en el bosque" src="C:\Users\rusokverse\OneDrive\MEDIA\IMAGEN\IMG EJEMPLOS\uno.jpeg">
+			<figcaption>Fig. 4 Mapache hembra</figcaption>
+		</figure>
+		
+		<details>
+			<summary>Requisitos del sistema</summary>
+			<p>
+				<ul>
+					<li>Memoria RAM: 8 Gb</li>
+					<li>Espacio de almacenamiento: 38 Gb</li>
+					<li>Procesador: i7</li>
+				</ul>
+			</p>
+		</details>
+		
+		<h2>Wbr</h2>
+		<p>Para cortar palabras, de ser necesario; esto es útil cuando que<wbr>re<wbr>mos prevenir que las palabras se trunquen sin sentido o cuando que<wbr>re<wbr>mos que las palabras no salten del todo a la siguiente línea.</p>
+		
+		<h2>Datalist</h2>
+		<label for="lstCargos">Elija su cargo
+			<input type="text" id="lstCargos" list="cargos">
+			<datalist id="cargos">
+				<option value="Auxiliar contable">
+				<option value="Auxiliar de sistemas">
+				<option value="Jefe de sistemas">
+				<option value="Jefe de RRHH">
+			</datalist>
+		</label>
+		
+		<h2>Meter</h2>
+		<p>
+			Likes
+			<meter value="7" min="0" max="10" >
+			<br>
+		</p>
+		<p>
+			Compatibilidad
+			<meter min="0" max="100" value="20" low="33" high="67" optimum="80">
+			</p>
+		<p>
+			<meter min="0" max="100" value="30" low="33" high="67" optimum="80">
+			</p>
+		<p>
+			<meter min="0" max="100" value="40" low="33" high="67" optimum="80">
+			</p>
+		<p>
+			<meter min="0" max="100" value="45" low="33" high="67" optimum="80">
+			</p>
+		<p>
+			<meter min="0" max="100" value="68" low="33" high="67" optimum="80">
+			</p>
+		<p>
+			<meter min="0" max="100" value="99" low="33" high="67" optimum="80">
+		</p>
+		
+		<br>
+		<h3>input type="range"</h3>
+		<div>
+			<input type="range" id="musica" name="musica" min="0" max="10">
+			<label for="musica">Música</label>
+		</div>
+		<div>
+			<input type="range" id="efectos" name="efectos" min="0" max="100" >
+			<label for="musica">Música</label>
+		</div>
 	</body>
 </html>
