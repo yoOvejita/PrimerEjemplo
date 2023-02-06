@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.marginados {
+	background-color: red;
+	color: yellow;
+}
 body {
 	background-color: #f2f2eb;
 	color: #2a2740;
@@ -6,7 +10,13 @@ body {
 div {
 	background-color: #bf4b4b;
 }
+
+#especial-titulo {
+	background-color: #f2f2eb;
+	color: #2a2740
+}
 h1 {
 	background-color: #d9644a;
 	color: #f2f2eb
 }
+

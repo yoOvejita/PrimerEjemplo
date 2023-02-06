@@ -176,7 +176,7 @@
 			<br>
 		</p>
 		<p>
-			Compatibilidad
+			Compatibilidad<br/>
 			<meter min="0" max="100" value="20" low="33" high="67" optimum="80">
 			</p>
 		<p>
@@ -202,8 +202,25 @@
 			<label for="musica">Música</label>
 		</div>
 		<div>
-			<input type="range" id="efectos" name="efectos" min="0" max="100" >
-			<label for="musica">Música</label>
+			<input type="range" id="efectos" name="efectos" min="0" max="100" value="90">
+			<label for="efectos">Efectos</label>
 		</div>
+		
+		<br>
+		<p>
+			Progreso:
+			<progress value="75" max="100"></progress>
+		</p>
+		
+		<h3>Input para búsquedas</h3>
+		<form action="#">
+			<input type="search" id="bsqProducto"> <br>
+			<input type="tel" id="telfemp"> <br>
+			<input type="time" id="horaDespacho"> <br>
+			<input type="url" id="urlPerfil"> <br>
+			<!-- Un mensaje al yo del futuro -->
+			<input type="week" id="semana"><br>
+			<input type="submit" value="ENVIAR DATOS">
+		</form>
 	</body>
 </html>
