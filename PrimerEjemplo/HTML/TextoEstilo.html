@@ -4,20 +4,69 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Insert title here</title>
 		<style type="text/css">
+			body {
+				background-color: #f2f2eb;
+				color: #2a2740;
+			}
 			.texto-con-fondo {
-				font-size: 300px;
-				letter-spacing:15px;
+				font-family: Fantasy;
+				font-size: 450px;
+				letter-spacing:20px;
 				color: transparent;
 				background-clip: text;
-				
-				background-image: url("C:/Users/rusokverse/OneDrive/MEDIA/IMAGEN/IMG EJEMPLOS/comp03.jpeg");
-				background-size: 130%;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-image: url("C:/Users/rusokverse/desktop/girasol.jpg");
+				background-size: 100%;
 			}
+			p {
+				font-size: 30px;
+			}
+			#ejemplo1 {
+				border: 10px black dotted;
+				padding: 15px;
+				background-color: pink;
+				background-clip: border-box;
+			}
+			#ejemplo2 {
+				border: 10px black dotted;
+				padding: 15px;
+				background-color: pink;
+				background-clip: padding-box;
+			}
+			#ejemplo3 {
+				border: 10px black dotted;
+				padding: 15px;
+				background-color: pink;
+				background-clip: content-box;
+			}
+			
 		</style>
 	</head>
 	<body>
 		<div class="texto-con-fondo">
 			PEPE
 		</div>
+		<div>
+			<p>Otto Texas</p>
+		</div>
+		
+		<p>Caso border-box</p>
+		<div id="ejemplo1">
+			<p>Este es el ejemplo 1: El fondo se extiene hasta detrás del borde.</p>
+		</div>
+		<p>Caso padding-box</p>
+		<div id="ejemplo2">
+			<p>Este es el ejemplo 2: El fondo se extiene hasta antes del borde.</p>
+		</div>
+		<p>Caso content-box</p>
+		<div id="ejemplo3">
+			<p>Este es el ejemplo 3: El fondo se extiene solo hasta la caja de contenido.</p>
+		</div>
+		
+		<div class="texto-con-fondo">
+			ANA
+		</div>
+		<p class="texto-con-fondo">Un párrafo</p>
 	</body>
 </html>
