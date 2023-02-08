@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body {
+	display:flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+}
+label { /* óvalo */
+	width: 250px;
+	height: 110px;
+	position: relative;
+	display:block;
+	background: #DFDBDE;
+	border-radius: 100px;
+	box-shadow: inset 0px 5px 15px rgba(0,0,0, 0.5), inset 0px -5px 15px rgba(255,255,255, 0.5);
+	cursor: pointer;
+}
+
+
+label:after {
+	content: "";
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top:10px;
+	left:10px;
+	background: linear-gradient(180deg, #FFFB05, #FFCB05);
+	border-radius: 90px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+}
+
+
+
+/* Ejemplos individuales */
+.contenedor {
+	display: flex;
+	background-color: Green;
+	flex-direction: row;
+}
+
+.contenedor > div {
+	background-color: Yellow;
+	margin: 10px;
+	padding: 10px;
+	font-size: 40px;
+}
+
+.contenedor2 {
+	display: flex;
+	background-color: Green;
+	flex-direction: row-reverse;
+}
+
+.contenedor2 > div {
+	background-color: Yellow;
+	margin: 10px;
+	padding: 10px;
+	font-size: 40px;
+}
+
+.contenedor3 {
+	display: flex;
+	background-color: Green;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+.contenedor3 > div {
+	background-color: Yellow;
+	margin: 10px;
+	padding: 10px;
+	font-size: 40px;
+}
+
+/* Unidades */
+
+/*
+Absolutas
+	cm: centímetros
+	mm: milímetros
+	in: pulgadas (inch); 1[in] = 2.54[cm] = 96px
+	px: pixeles
+	pt: punto 1/72 de pulgada
+	pc: picas 1[pc] = 12[pt]
+Relativas
+	em: Relativo al tamaño de fuente del elemento
+	ex: Relativoal tamaño del eje X de la fuente del elemento
+	vw: Relativo al 1% del ancho de la ventana del navegador
+	vh: Relativo al 1% del alto de la ventana del navegador
+*/
+
+
+p:after {
+	content: "PUNTO";
+	color: red;
+	font-size: 10px;
+}
