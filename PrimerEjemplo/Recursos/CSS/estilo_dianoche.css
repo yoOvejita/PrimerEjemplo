@@ -16,6 +16,7 @@ label { /* óvalo */
 	border-radius: 100px;
 	box-shadow: inset 0px 5px 15px rgba(0,0,0, 0.5), inset 0px -5px 15px rgba(255,255,255, 0.5);
 	cursor: pointer;
+	transition:2s;
 }
 
 
@@ -29,8 +30,45 @@ label:after {
 	background: linear-gradient(180deg, #FFFB05, #FFCB05);
 	border-radius: 90px;
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+	transition: 2s;
+}
+/* Ocultamos el checkbox */
+input {
+	visibility: hidden;
+	width: 0;
+	height: 0;
 }
 
+/* Cambiando el color, si está tickeado */
+input:checked + label {
+	background: #051963;
+}
+
+input:checked + label:after {
+	left: 150px;
+	/* transform: translateX(-100%); */
+	background: linear-gradient(180deg, #5776EC, #2249D9);
+	transition: 2s;
+}
+
+label:active:after {
+	width: 120px;
+}
+
+.elemento_cambiante {
+	width: 100vw;
+	height: 100vh;
+	background: #FFFFFF;
+	color: #000000;
+	z-index: -1;
+	position: absolute;
+	transition: 2s;
+}
+/* cambio de apriencia cuando está checked */
+input:checked + label + .elemento_cambiante {
+	background: #838489;
+	color: #E8E9D7;
+}
 
 
 /* Ejemplos individuales */
@@ -91,6 +129,18 @@ Relativas
 	vh: Relativo al 1% del alto de la ventana del navegador
 */
 
+/* cursor:
+	pointer
+	zoom-in
+	zoom-out
+	no-drop
+	none
+	move
+	help
+	copy
+	crosshair
+	etc...
+*/
 
 p:after {
 	content: "PUNTO";
