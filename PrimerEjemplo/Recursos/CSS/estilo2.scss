@@ -1,0 +1,61 @@
+@import "estilo3.scss";
+
+$color-fondo: #444444;
+$color-letras: #CCCCCC;
+$ancho : 450;
+$factor-proporcion: 0.5;
+$resultado: $ancho * $factor-proporcion;
+
+@mixin estilo-navidad {
+	color: greenyellow;
+	font-size: 50px;
+	font-family: monospace;
+}
+
+body {
+	background-color: $color-fondo;
+	$color-letras: yellow !global;
+	color: $color-letras;
+}
+.elemento {
+	
+	color: $color-letras;
+	font-size: 40px;
+}
+
+
+div {
+	p {
+		color: red;
+		font: {
+			family: Arial;
+			size: 30px;
+		}
+	}
+	a {
+		background-color: springgreen;
+	}
+}
+
+h2 {
+	@extend .elemento;
+	background-color: black;
+	
+}
+
+.tags {
+	@extend h2;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+	@include estilo-navidad;
+	font-size: abs($resultado)px;
+	font-size: max(-20, 5, 6, 3, -3, -6)px; /*min(a,b,c,...)*/
+	font-size: random(); /* 0 - 1 */
+	font-size: random(6); /* 1 - 6 */
+	font-size: round(3.14);/* 3 */ /*3.86 -> 4*/
+	font-family: unquote(to-lower-case("Helvetica")); /* lo convertirá todo en minúsculas */
+	font-family: unquote(to-upper-case("Arial")); /* lo convertirá todo en mayúsculas */
+	font-family: unique-id(); /* retorna una cadena con valores aleatorios y diferentes */
+}
